@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li  routerLinkActive="active"><a routerLink="auth" >Login</a></li>
+      <li routerLinkActive="active" ><a routerLink="meters" >Meters</a></li>
+      <li routerLinkActive="active"><a routerLink="add"> New meter</a></li>
+      <li routerLinkActive="active"><a routerLink="users"> Users</a></li>
+    </ul>
+    <div class="navbar-right">You are on this page since {{secondes}} seconds</div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <router-outlet></router-outlet>
+  </div>
+</div>

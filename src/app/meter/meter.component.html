@@ -1,0 +1,30 @@
+<li [ngClass]="{'list-group-item' : true, 'list-group-item-success': getOnClassColor(), 'list-group-item-danger': getOffClassColor()}" >
+
+    <div class="container">
+      <div class="row">
+      <h3>
+          <div class="col-xs-4">
+            Meter : {{name}}
+          </div>
+        </h3>
+        <div class="col-xs-2">
+          <ui-switch uncheckedLabel ="off" checkedLabel="on" [checked] = "onchange()"  (valueChange)="switch($event,name)"></ui-switch>
+
+        </div>
+
+        <h2>
+          <div class="col-xs-6">
+            this meter is {{status}}
+          </div>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <input placeholder="You can change the meter name from here" type="text" class="form-control" [(ngModel)]="name">
+          <a [routerLink]="[id]">View detail</a>
+        </div>
+      </div>
+
+    </div>
+
+</li>
