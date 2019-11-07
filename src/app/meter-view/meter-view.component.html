@@ -7,6 +7,6 @@
   <ui-switch [disabled]="!isAuth"  size = "large" uncheckedLabel  = "Switch Off All" checkedLabel= "Switch On All" [checked] = "monitorSwitchAll"  (valueChange)="switchAll($event)"></ui-switch>
 </div>
 <div>
-  <button class="btn btn-success" (click)="onSave()">Save</button>
-  <button class="btn btn-primary" (click)="onFetch()">Load meters</button>
+  <button class="btn btn-success pull-right" (click)="onSave()">Save</button>
+  <button class="btn btn-primary pull-right" (click)="onFetch()">Load meters</button>
 </div>
